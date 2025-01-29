@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Video Editor Portfolio">
+    <title>Your Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #1c1c1c;
+            color: #f0f0f0;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #333;
+            padding: 20px 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1 {
+            font-size: 2.5rem;
+        }
+        header nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 1.2rem;
+        }
+        section {
+            padding: 50px 10%;
+        }
+        .intro {
+            text-align: center;
+        }
+        .intro h2 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+        .intro p {
+            font-size: 1.5rem;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        .portfolio, .reviews, .skills, .thumbnail-design {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .portfolio div, .thumbnail-design div {
+            background-color: #2a2a2a;
+            padding: 20px;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+        .portfolio div:hover, .thumbnail-design div:hover {
+            transform: scale(1.05);
+        }
+        .portfolio img, .thumbnail-design img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .portfolio h3, .thumbnail-design h3 {
+            margin-top: 10px;
+            font-size: 1.2rem;
+        }
+        .button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.5rem;
+            cursor: pointer;
+            text-align: center;
+            margin-top: 30px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .contact, .hire-section {
+            text-align: center;
+        }
+        .hire-section a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.2rem;
+        }
+        .hire-section a:hover {
+            color: #ffcc00;
+        }
+        footer {
+            background-color: #333;
+            padding: 20px 10%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Your Portfolio</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#reviews">Reviews</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="about" class="intro">
+        <h2>Welcome to My Editing World</h2>
+        <p>I am a passionate video editor with years of experience, ready to bring your vision to life through dynamic and creative video editing, design, and thumbnail creation.</p>
+    </section>
+
+    <section id="portfolio">
+        <h2>My Portfolio</h2>
+        <div class="portfolio">
+            <!-- Add images or videos of your editing works here -->
+            <div>
+                <img src="your-image.jpg" alt="Project 1">
+                <h3>Project Title</h3>
+                <p>Short description of the project and what you did.</p>
+            </div>
+            <div>
+                <img src="your-image.jpg" alt="Project 2">
+                <h3>Project Title</h3>
+                <p>Short description of the project and what you did.</p>
+            </div>
+            <!-- Add more projects as needed -->
+        </div>
+    </section>
+
+    <section id="reviews" class="reviews">
+        <h2>Client Reviews</h2>
+        <!-- Add client feedback and their experience with your work -->
+        <div>
+            <p>"Incredible editor! Took my content to the next level!"</p>
+            <small>- Client Name</small>
+        </div>
+        <div>
+            <p>"Professional and efficient. Highly recommend for any project!"</p>
+            <small>- Client Name</small>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <h2>What I Can Do as a Video Editor</h2>
+        <ul>
+            <li>Video editing (cutting, trimming, effects)</li>
+            <li>Color grading and correction</li>
+            <li>Sound editing and mixing</li>
+            <li>Motion graphics</li>
+            <li>Thumbnail and design creation</li>
+            <li>And much more...</li>
+        </ul>
+    </section>
+
+    <section id="thumbnail-design" class="thumbnail-design">
+        <h2>Thumbnail and Design Works</h2>
+        <div>
+            <img src="your-thumbnail.jpg" alt="Thumbnail Design 1">
+            <h3>Thumbnail Design 1</h3>
+            <p>Description of your design and how it helps clients stand out.</p>
+        </div>
+        <div>
+            <img src="your-thumbnail.jpg" alt="Thumbnail Design 2">
+            <h3>Thumbnail Design 2</h3>
+            <p>Description of your design and how it helps clients stand out.</p>
+        </div>
+    </section>
+
+    <section class="hire-section">
+        <h2>Interested in Working with Me?</h2>
+        <a href="mailto:your-email@example.com" class="button">Hire as an Editor</a>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <p>Email me at: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Your Name. All rights reserved.</p>
+    </footer>
+</body>
+</html>
